@@ -1,0 +1,77 @@
+﻿@model SalaoAutomovelI.Models.Carro
+
+@{
+    ViewData["Title"] = "Detalhes do Veículo";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoCarroceria)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoCarroceria)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Placa)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Placa)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Ano)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Ano)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cor)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cor)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.KM)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.KM)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoCambio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoCambio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TipoCombustivel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TipoCombustivel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecoCompra)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrecoCompra)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecoVenda)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrecoVenda)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Cliente)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Cliente.Nome)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.Id">Editar</a>
+    <a class="btn btn-info" asp-action="Index">Voltar</a>
+</div>
